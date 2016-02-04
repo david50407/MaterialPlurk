@@ -1,0 +1,10 @@
+@import 'compass/css3/box-shadow';
+
+$shadow-color: rgba(black, 0.4);
+@mixin elevation($depth) {
+	@if $depth == 0 {
+		@include box-shadow(none);
+	} @else {
+		@include box-shadow($shadow-color 0 1px $depth);
+	}
+}

@@ -1,0 +1,109 @@
+#timeline_holder {
+  margin-top: 64px; }
+
+#dashboard_holder {
+  position: initial; }
+
+#plurk-dashboard .dash-group-left {
+  width: 40%; }
+#plurk-dashboard .dash-group-right {
+  width: 60%; }
+#plurk-dashboard .dash-group-form {
+  width: 98%;
+  max-width: 980px;
+  min-width: 580px;
+  position: absolute;
+  margin: 42px auto 0;
+  top: 0;
+  z-index: 1000; }
+#plurk-dashboard .dash-segment + .dash-segment {
+  margin-top: 8px; }
+#plurk-dashboard .dash-segment .segment-content {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  padding: 8px;
+  margin-top: 0; }
+  #plurk-dashboard .dash-segment .segment-content + .segment-content {
+    margin-top: 8px; }
+#plurk-dashboard .dash-segment.dash-segment-post {
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 8px;
+  margin-top: 8px; }
+  #plurk-dashboard .dash-segment.dash-segment-post .segment-content {
+    min-height: 55px;
+    max-height: 55px;
+    overflow: hidden;
+    -moz-transition: max-height 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    -o-transition: max-height 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    -webkit-transition: max-height 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    -webkit-transition-delay: 0s;
+    transition: max-height 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s; }
+  #plurk-dashboard .dash-segment.dash-segment-post:hover .segment-content {
+    max-height: 600px; }
+  #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm {
+    padding: 0; }
+    #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .submit_img {
+      position: absolute;
+      right: 0; }
+    #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .input_holder .textarea_holder textarea {
+      padding: 0px 88px 0px 8px !important; }
+    #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .icons_holder {
+      margin: 8px 0 0 0; }
+#plurk-dashboard .dash-segment.dash-segment-profile {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px; }
+  #plurk-dashboard .dash-segment.dash-segment-profile .segment-content {
+    -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px 0 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 0; }
+    #plurk-dashboard .dash-segment.dash-segment-profile .segment-content + .segment-content {
+      -moz-border-radius: 0 0 2px 2px;
+      -webkit-border-radius: 0;
+      border-radius: 0 0 2px 2px;
+      padding-top: 0; }
+  #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile {
+    height: 138px; }
+    #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile img.profile-pic {
+      margin: 8px;
+      width: 122px;
+      height: 122px;
+      right: 0; }
+    #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile #full_name {
+      font-size: 24px;
+      padding: 16px 8px 8px;
+      margin-left: 0;
+      margin-right: 130px; }
+      #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile #full_name .display_name {
+        margin-bottom: 8px; }
+      #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile #full_name .nick_name {
+        font-size: 14px;
+        color: #666666;
+        opacity: 1; }
+    #plurk-dashboard .dash-segment.dash-segment-profile #dash-profile .profile-info {
+      padding: 16px 8px 8px;
+      margin-left: 0;
+      margin-right: 130px;
+      font-size: 14px;
+      color: #666666;
+      opacity: 1; }
+  #plurk-dashboard .dash-segment.dash-segment-profile #dash-additional-info {
+    padding: 0 8px 8px 8px;
+    color: #666666 !important; }
+    #plurk-dashboard .dash-segment.dash-segment-profile #dash-additional-info #about_me {
+      font-size: 14px;
+      margin-bottom: 16px; }
+    #plurk-dashboard .dash-segment.dash-segment-profile #dash-additional-info #relationship_container {
+      font-size: 14px; }

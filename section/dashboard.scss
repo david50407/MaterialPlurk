@@ -1,0 +1,152 @@
+@import 'compass/css3/border-radius';
+@import 'compass/css3/box-shadow';
+@import 'compass/css3/transition';
+@import './_elevation';
+
+// Timeline hack
+#timeline_holder {
+	margin-top: 64px;
+}
+
+// Dashboard
+#dashboard_holder {
+	position: initial;
+}
+#plurk-dashboard {
+	.dash-group-left {
+		width: 40%;
+	}
+	.dash-group-right {
+		width: 60%;
+	}
+	.dash-group-form {
+		// fake container
+		width: 98%;
+		max-width: 980px;
+		min-width: 580px;
+		position: absolute;
+		margin: 42px auto 0;
+		top: 0;
+		z-index: 1000;
+	}
+
+	// Segments
+	.dash-segment {
+		& + .dash-segment {
+			margin-top: 8px;
+		}
+	 	.segment-content {
+			@include border-radius(2px);
+			@include elevation(2px);
+			padding: 8px;
+			margin-top: 0;
+			& + .segment-content {
+				margin-top: 8px;
+			}
+		}
+
+		// Form
+		&.dash-segment-post {
+			// Floating
+			@include elevation(8px);
+			margin-top: 8px;
+
+			.segment-content {
+				min-height: 55px;
+				max-height: 55px;
+				overflow: hidden;
+				@include transition(max-height 0.4s cubic-bezier(.55, 0, .1, 1) 0s);
+			}
+
+			&:hover .segment-content {
+				max-height: 600px;
+			}
+
+			#plurk_form .plurkForm {
+				padding: 0;
+
+				.submit_img {
+					position: absolute;
+					right: 0;
+				}
+
+				.input_holder .textarea_holder textarea {
+					padding: 0px 88px 0px 8px !important;
+				}
+
+				.icons_holder {
+					margin: 8px 0 0 0;
+				}
+			}
+		}
+
+		// Profile
+		&.dash-segment-profile {
+			// Merge hack
+			@include border-radius(2px);
+			@include elevation(2px);
+			.segment-content {
+				@include border-radius(2px 2px 0 0);
+				@include elevation(0);
+				margin-top: 0;
+
+				& + .segment-content {
+					@include border-radius(0 0 2px 2px);
+					padding-top: 0;
+				}
+			}
+
+			#dash-profile {
+				$avatar-size: 122px;
+				height: $avatar-size + 8px * 2;
+				// Avatar
+				img.profile-pic {
+					margin: 8px;
+					width: $avatar-size;
+					height: $avatar-size;
+					right: 0;
+				}
+				// Name
+				#full_name {
+					font-size: 24px;
+					padding: 16px 8px 8px;
+					margin-left: 0;
+					margin-right: $avatar-size + 8px;
+
+					.display_name {
+						margin-bottom: 8px;
+					}
+
+					.nick_name {
+						font-size: 14px;
+						color: tint(black, 40);
+						opacity: 1;
+					}
+				}
+				// Profile
+				.profile-info {
+					padding: 16px 8px 8px;
+					margin-left: 0;
+					margin-right: $avatar-size + 8px;
+					font-size: 14px;
+					color: tint(black, 40);
+					opacity: 1;
+				}
+			}
+
+			// Additional Info
+			#dash-additional-info {
+				padding: 0 8px 8px 8px;
+				color: tint(black, 40) !important;
+				#about_me {
+					font-size: 14px;
+					margin-bottom: 16px;
+				}
+				#relationship_container {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
