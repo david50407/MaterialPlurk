@@ -107,3 +107,7 @@
       margin-bottom: 16px; }
     #plurk-dashboard .dash-segment.dash-segment-profile #dash-additional-info #relationship_container {
       font-size: 14px; }
+
+.timeline_control {
+  width: 0;
+  overflow: visible; }
