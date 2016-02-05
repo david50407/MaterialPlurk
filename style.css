@@ -145,3 +145,21 @@
     left: 0; }
 
 /* Expand Timeline Control END */
+/* Timeline Control Icon Only BEGIN /* */
+#timeline_control_holder #filter_tab li a {
+  font-size: 0;
+  line-height: 0; }
+  #timeline_control_holder #filter_tab li a i:before {
+    min-width: 17px; }
+  #timeline_control_holder #filter_tab li a i {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0; }
+  #timeline_control_holder #filter_tab li a b {
+    font-weight: normal; }
+  #timeline_control_holder #filter_tab li a span.unread_generic {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0 0 0 4px; }
+
+/* Timeline Control Icon Only END */

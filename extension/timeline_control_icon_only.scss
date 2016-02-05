@@ -1,0 +1,30 @@
+/* Timeline Control Icon Only BEGIN /* */
+#timeline_control_holder #filter_tab li {
+	a {
+		font-size: 0;
+		line-height: 0;
+
+		// Fix icon width
+		i:before {
+			min-width: 17px;
+		}
+
+		i {
+			font-size: 14px;
+			line-height: 25px;
+			margin: 0;
+		}
+
+		b {
+			font-weight: normal;
+		}
+
+		// Smaller unread number
+		span.unread_generic {
+			font-size: 12px;
+			line-height: 25px;
+			margin: 0 0 0 4px;
+		}
+	}
+}
+/* Timeline Control Icon Only END */
