@@ -1,0 +1,33 @@
+/* Expand Timeline Control BEGIN /* */
+.timeline_control {
+	#timeline_control_holder {
+		width: 100%;
+
+		#filter_tab, #updater {
+			position: absolute;
+			bottom: 0;
+		}
+
+		#filter_tab {
+			right: 0;
+			li {
+				clear: none;
+				width: auto;
+				padding-right: 8px;
+				padding-left: 0;
+			}
+
+			&:hover a, a { 
+				&, &.filter_selected, &.has_unread {
+					height: 25px;
+					margin: 0;
+				}
+			}
+		}
+
+		#updater {
+			left: 0;
+		}
+	}
+}
+/* Expand Timeline Control END */

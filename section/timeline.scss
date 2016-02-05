@@ -1,6 +1,27 @@
 // Control
 .timeline_control {
-	// Overlay hack
-	width: 0;
+	// Space hack
+	margin-left: 0;
+	margin-top: 0;
+	height: 0;
 	overflow: visible;
+
+	#timeline_control_holder {
+		// Space hack: fix position
+		margin-bottom: 16px;
+		margin-left: 0px;
+
+		// Space hack: fix position
+		#filter_tab li {
+			padding-left: 8px;
+		}
+
+		#updater {
+			margin-left: 0;
+			.item a {
+				margin-left: 8px;
+				margin-right: -4px; // I don't know why but fix the '&nbsp;' width
+			}
+		}
+	}
 }
