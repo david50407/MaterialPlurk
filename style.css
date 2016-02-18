@@ -49,7 +49,8 @@
     padding: 0; }
     #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .submit_img {
       position: absolute;
-      right: 0; }
+      right: 0;
+      z-index: 1000; }
     #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .input_holder .textarea_holder textarea {
       padding: 0px 88px 0px 8px !important; }
     #plurk-dashboard .dash-segment.dash-segment-post #plurk_form .plurkForm .icons_holder {
